@@ -24,7 +24,8 @@
     justify-content: center;
     align-items: center;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #e0e0e0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .card-front {
@@ -40,7 +41,7 @@
     .card {
         margin-top: 5vh;
         max-width: 85vw;
-        height: 85vh; /* Takes up 70% of viewport height */
+        height: 75vh; /* Takes up 70% of viewport height */
         aspect-ratio: unset; /* Remove aspect ratio constraint on mobile */
     }
 }

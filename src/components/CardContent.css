@@ -8,5 +8,10 @@
     font-size: 128px;
     font-weight: bold;
     text-align: center;
+    padding-top: 40px;
+
+    @media (max-width: 768px) {
+        padding-top: 80px;
+    }
 }
 

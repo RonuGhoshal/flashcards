@@ -3,9 +3,9 @@ import "./Card.css";
 import CardContent from "./CardContent";
 
 const Card = ({
-  word = "CAT",
-  imageUrl = "https://media.istockphoto.com/id/1443562748/photo/cute-ginger-cat.jpg?s=1024x1024&w=is&k=20&c=QaEkKC7lFEBrzzPftMRBVuOZq4FNOnUjOV1VqTmpMfY=",
+  cardInfo
 }) => {
+  const { word, imageUrl } = cardInfo;
   const [isFlipped, setIsFlipped] = useState(false);
 
   const handleClick = () => {
