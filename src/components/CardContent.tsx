@@ -1,3 +1,5 @@
+import './CardContent.css';
+
 const CardContent = ({imageUrl, word}) => {
     return (
         <div className="card-content">
