@@ -1,7 +1,15 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import "./CardContent.css";
 
-const CardContent = ({ imageUrl, word, cardSide }) => {
+interface CardContentProps {
+  imageUrl: string;
+  word: string;
+  cardSide: string;
+}
+
+const CardContent = ({ imageUrl, word, cardSide }: CardContentProps) => {
+  const [renderedWord, setRenderedWord] = useState(word);
+  
   useEffect(() => {
     if (cardSide === "back") {
       let index = 0;
@@ -13,14 +21,12 @@ const CardContent = ({ imageUrl, word, cardSide }) => {
             new SpeechSynthesisUtterance(highlightedLetter.toLowerCase())
           );
           const afterLetter = word.substring(index + 1);
-          document.querySelector(
-            ".card-word"
-          ).innerHTML = `${beforeLetter}<span style="text-decoration: underline;">${highlightedLetter}</span>${afterLetter}`;
+          setRenderedWord(
+            `${beforeLetter}<span style="text-decoration: underline;">${highlightedLetter}</span>${afterLetter}`
+          );
           index++;
         } else if (index === word.length) {
-          document.querySelector(
-            ".card-word"
-          ).innerHTML = `<span style="text-decoration: underline;">${word}</span>`;
+          setRenderedWord(`<span style="text-decoration: underline;">${word}</span>`);
           speechSynthesis.speak(
             new SpeechSynthesisUtterance(word.toLowerCase())
           );
@@ -30,14 +36,14 @@ const CardContent = ({ imageUrl, word, cardSide }) => {
         }
       }, 1000);
     }
-  }, [cardSide]);
+  }, [cardSide, word]);
 
   return (
     <div className="card-content">
       <div className="card-image">
         <img src={imageUrl} alt={word} />
       </div>
-      <div className="card-word">{word}</div>
+      <div className="card-word" dangerouslySetInnerHTML={{ __html: renderedWord }} />
     </div>
   );
 };
