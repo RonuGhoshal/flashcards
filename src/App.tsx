@@ -6,17 +6,17 @@ const cardInfo = [
   {
     word: "CAT",
     imageUrl:
-      "https://media.istockphoto.com/id/1443562748/photo/cute-ginger-cat.jpg?s=1024x1024&w=is&k=20&c=QaEkKC7lFEBrzzPftMRBVuOZq4FNOnUjOV1VqTmpMfY=",
+      "https://media.istockphoto.com/id/1443562748/photo/cute-ginger-cat.jpg?s=612x612&w=0&k=20&c=vvM97wWz-hMj7DLzfpYRmY2VswTqcFEKkC437hxm3Cg=",
   },
   {
     word: "DOG",
     imageUrl:
-      "https://media.istockphoto.com/id/1443562748/photo/cute-ginger-cat.jpg?s=1024x1024&w=is&k=20&c=QaEkKC7lFEBrzzPftMRBVuOZq4FNOnUjOV1VqTmpMfY=",
+      "https://img.freepik.com/premium-photo/cute-golden-retriver-puppy-white-background_104627-3055.jpg",
   },
   {
     word: "FISH",
     imageUrl:
-      "https://media.istockphoto.com/id/1443562748/photo/cute-ginger-cat.jpg?s=1024x1024&w=is&k=20&c=QaEkKC7lFEBrzzPftMRBVuOZq4FNOnUjOV1VqTmpMfY=",
+      "https://thumbs.dreamstime.com/b/gold-fish-white-background-25937234.jpg",
   },
 ];
 function App() {

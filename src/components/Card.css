@@ -36,12 +36,11 @@
     transform: rotateY(180deg);
 }
 
-/* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
     .card {
         margin-top: 5vh;
-        max-width: 85vw;
-        height: 75vh; /* Takes up 70% of viewport height */
-        aspect-ratio: unset; /* Remove aspect ratio constraint on mobile */
+        max-width: 90vw;
+        height: 75vh;
+        aspect-ratio: unset;
     }
 }
