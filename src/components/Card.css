@@ -24,16 +24,17 @@
     justify-content: center;
     align-items: center;
     border-radius: 8px;
-    border: 2px solid #e0e0e0;
+    border: 2px groove seagreen;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .card-front {
-    background-color: white;
+    background: linear-gradient(135deg, #ffffff 0%, #f0f7ff 100%);
 }
 
 .card-back {
     transform: rotateY(180deg);
+    background: linear-gradient(135deg, #ffffff 0%, #f0fff4 100%);
 }
 
 @media (max-width: 768px) {
