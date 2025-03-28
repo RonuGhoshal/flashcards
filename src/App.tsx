@@ -115,12 +115,12 @@ function App() {
       <div className="card-buttons">
         {index > 0 && (
           <button className="card-button" onClick={() => setIndex(index - 1)}>
-            Previous Card
+            Back
           </button>
         )}
         {index < cardInfo.length - 1 && (
           <button className="card-button" onClick={() => setIndex(index + 1)}>
-            Next Card
+            Next
           </button>
         )}
       </div>
