@@ -6,105 +6,105 @@ const cardInfo = [
   {
     word: "CAT",
     imageUrl:
-      "https://cdn.jsdelivr.net/gh/ronughoshal/flashcards/assets/cat.jpg",
+      "https://cdn.jsdelivr.net/gh/ronughoshal/flashcards/src/assets/cat.jpg",
   },
   {
     word: "DOG",
     imageUrl:
-      "https://cdn.jsdelivr.net/gh/ronughoshal/flashcards/assets/dog.jpg",
+      "https://cdn.jsdelivr.net/gh/ronughoshal/flashcards/src/assets/dog.jpg",
   },
   {
     word: "FISH",
     imageUrl:
-      "https://cdn.jsdelivr.net/gh/ronughoshal/flashcards/assets/fish.jpg",
+      "https://cdn.jsdelivr.net/gh/ronughoshal/flashcards/src/assets/fish.jpg",
   },
   {
     word: "BIRD",
     imageUrl:
-      "https://cdn.jsdelivr.net/gh/ronughoshal/flashcards/assets/bird.jpg",
+      "https://cdn.jsdelivr.net/gh/ronughoshal/flashcards/src/assets/bird.jpg",
   },
   { word: "BAT",
-    imageUrl: "https://cdn.jsdelivr.net/gh/ronughoshal/flashcards/assets/bat.jpg",
+    imageUrl: "https://cdn.jsdelivr.net/gh/ronughoshal/flashcards/src/assets/bat.jpg",
   },
   {
     word: "MOUSE",
-    imageUrl: "https://cdn.jsdelivr.net/gh/ronughoshal/flashcards/assets/mouse.jpg",
+    imageUrl: "https://cdn.jsdelivr.net/gh/ronughoshal/flashcards/src/assets/mouse.jpg",
   },
   {
     word: "LION",
-    imageUrl: "https://cdn.jsdelivr.net/gh/ronughoshal/flashcards/assets/lion.jpg",
+    imageUrl: "https://cdn.jsdelivr.net/gh/ronughoshal/flashcards/src/assets/lion.jpg",
   },
   {
     word: "PIG",
-    imageUrl: "https://cdn.jsdelivr.net/gh/ronughoshal/flashcards/assets/pig.jpg",
+    imageUrl: "https://cdn.jsdelivr.net/gh/ronughoshal/flashcards/src/assets/pig.jpg",
   },
   {
     word: "HEN",
-    imageUrl: "https://cdn.jsdelivr.net/gh/ronughoshal/flashcards/assets/hen.jpg",
+    imageUrl: "https://cdn.jsdelivr.net/gh/ronughoshal/flashcards/src/assets/hen.jpg",
   },
   {
     word: "FOX",
-    imageUrl: "https://cdn.jsdelivr.net/gh/ronughoshal/flashcards/assets/fox.jpg",
+    imageUrl: "https://cdn.jsdelivr.net/gh/ronughoshal/flashcards/src/assets/fox.jpg",
   },
   {
     word: "BOX",
-    imageUrl: "https://cdn.jsdelivr.net/gh/ronughoshal/flashcards/assets/box.jpg",
+    imageUrl: "https://cdn.jsdelivr.net/gh/ronughoshal/flashcards/src/assets/box.jpg",
   },
   {
     word: "GOAT",
-    imageUrl: "https://cdn.jsdelivr.net/gh/ronughoshal/flashcards/assets/goat.jpg",
+    imageUrl: "https://cdn.jsdelivr.net/gh/ronughoshal/flashcards/src/assets/goat.jpg",
   },
   {
     word: "BOAT",
-    imageUrl: "https://cdn.jsdelivr.net/gh/ronughoshal/flashcards/assets/boat.jpg",
+    imageUrl: "https://cdn.jsdelivr.net/gh/ronughoshal/flashcards/src/assets/boat.jpg",
   },
   {
     word: "BEAR",
-    imageUrl: "https://cdn.jsdelivr.net/gh/ronughoshal/flashcards/assets/bear.jpg",
+    imageUrl: "https://cdn.jsdelivr.net/gh/ronughoshal/flashcards/src/assets/bear.jpg",
   },
   {
     word: "HAIR",
-    imageUrl: "https://cdn.jsdelivr.net/gh/ronughoshal/flashcards/assets/hair.jpg",
+    imageUrl: "https://cdn.jsdelivr.net/gh/ronughoshal/flashcards/src/assets/hair.jpg",
   },
   {
     word: "DUCK",
-    imageUrl: "https://cdn.jsdelivr.net/gh/ronughoshal/flashcards/assets/duck.jpg",
+    imageUrl: "https://cdn.jsdelivr.net/gh/ronughoshal/flashcards/src/assets/duck.jpg",
   },
   {
     word: "TRUCK",
-    imageUrl: "https://cdn.jsdelivr.net/gh/ronughoshal/flashcards/assets/truck.jpg",
+    imageUrl: "https://cdn.jsdelivr.net/gh/ronughoshal/flashcards/src/assets/truck.jpg",
   },
   {
     word: "STAR",
-    imageUrl: "https://cdn.jsdelivr.net/gh/ronughoshal/flashcards/assets/star.jpg",
+    imageUrl: "https://cdn.jsdelivr.net/gh/ronughoshal/flashcards/src/assets/star.jpg",
   },
   {
     word: "CAR",
-    imageUrl: "https://cdn.jsdelivr.net/gh/ronughoshal/flashcards/assets/car.jpg",
+    imageUrl: "https://cdn.jsdelivr.net/gh/ronughoshal/flashcards/src/assets/car.jpg",
   },
   {
     word: "MOON",
-    imageUrl: "https://cdn.jsdelivr.net/gh/ronughoshal/flashcards/assets/moon.jpg",
+    imageUrl: "https://cdn.jsdelivr.net/gh/ronughoshal/flashcards/src/assets/moon.jpg",
   },
   {
     word: "SPOON",
-    imageUrl: "https://cdn.jsdelivr.net/gh/ronughoshal/flashcards/assets/spoon.jpg",
+    imageUrl: "https://cdn.jsdelivr.net/gh/ronughoshal/flashcards/src/assets/spoon.jpg",
   },
   {
     word: "BEE",
-    imageUrl: "https://cdn.jsdelivr.net/gh/ronughoshal/flashcards/assets/bee.jpg",
+    imageUrl: "https://cdn.jsdelivr.net/gh/ronughoshal/flashcards/src/assets/bee.jpg",
   },
   {
     word: "TREE",
-    imageUrl: "https://cdn.jsdelivr.net/gh/ronughoshal/flashcards/assets/tree.jpg",
+    imageUrl: "https://cdn.jsdelivr.net/gh/ronughoshal/flashcards/src/assets/tree.jpg",
   },
   {
     word: "FROG",
-    imageUrl: "https://cdn.jsdelivr.net/gh/ronughoshal/flashcards/assets/frog.jpg",
+    imageUrl: "https://cdn.jsdelivr.net/gh/ronughoshal/flashcards/src/assets/frog.jpg",
   },
   {
     word: "LOG",
-    imageUrl: "https://cdn.jsdelivr.net/gh/ronughoshal/flashcards/assets/log.jpg",
+    imageUrl: "https://cdn.jsdelivr.net/gh/ronughoshal/flashcards/src/assets/log.jpg",
   }
 ];
 function App() {
