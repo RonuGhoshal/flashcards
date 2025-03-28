@@ -29,51 +29,40 @@ const CardContent = ({ imageUrl, word, cardSide }: CardContentProps) => {
     );
   };
 
-  const highlightAndSpeak = () => {
-    setTimeout(() => {
-      highlightAndSpeakWord();
-      let index = 0;
-      const interval = setInterval(() => {
-        if (index < word.length) {
-          highlightAndSpeakLetter(index, word);
-          index++;
-        } else if (index === word.length) {
-          highlightAndSpeakWord();
-          index++;
-        } else {
-          clearInterval(interval);
-        }
-      }, 1000);
+  const highlightAndSpeak = (word: string) => {
+    let index = 0;
+    highlightAndSpeakWord();
+  
+    const intervalId = setInterval(() => {
+      if (index < word.length) {
+        highlightAndSpeakLetter(index, word);
+        index++;
+      } else if (index === word.length) {
+        highlightAndSpeakWord();
+        index++;
+      } else {
+        clearInterval(intervalId);
+      }
     }, 1000);
+  
+    return intervalId;
   };
 
   useEffect(() => {
-    let intervalId: NodeJS.Timeout;
+    if (cardSide !== "back") return;
+  
     let timeoutId: NodeJS.Timeout;
-
-    if (cardSide === "back") {
-      timeoutId = setTimeout(() => {
-        highlightAndSpeakWord();
-        let index = 0;
-        intervalId = setInterval(() => {
-          if (index < word.length) {
-            highlightAndSpeakLetter(index, word);
-            index++;
-          } else if (index === word.length) {
-            highlightAndSpeakWord();
-            index++;
-          } else {
-            clearInterval(intervalId);
-          }
-        }, 1000);
-      }, 1000);
-    }
-
-    // Cleanup function to cancel speech and clear intervals
+    let intervalId: NodeJS.Timeout;
+  
+    timeoutId = setTimeout(() => {
+      intervalId = highlightAndSpeak(word);
+    }, 1000);
+  
+    // Cleanup function
     return () => {
       window.speechSynthesis.cancel();
-      if (timeoutId) clearTimeout(timeoutId);
-      if (intervalId) clearInterval(intervalId);
+      clearTimeout(timeoutId);
+      clearInterval(intervalId);
     };
   }, [cardSide, word]);
 
