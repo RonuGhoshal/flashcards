@@ -66,7 +66,11 @@ const CardContent = ({ imageUrl, word, cardSide }: CardContentProps) => {
   return (
     <div className="card-content">
       <div className="card-image">
-        <img src={imageUrl} alt={word} />
+        <img 
+          src={imageUrl} 
+          alt={word} 
+          className={cardSide === "front" ? "bounce-animation" : ""}
+        />
       </div>
       <div
         className="card-word"
