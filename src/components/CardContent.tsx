@@ -12,12 +12,10 @@ const CardContent = ({ imageUrl, word, cardSide }: CardContentProps) => {
 
   const highlightAndSpeakWord = () => {
     setRenderedWord(`<span style="text-decoration: underline;">${word}</span>`);
-    console.log(`speaking word ${word}`);
     speechSynthesis.speak(new SpeechSynthesisUtterance(word.toLowerCase()));
   };
 
   const highlightAndSpeakLetter = (index: number, word: string) => {
-    console.log(`highlighting and speaking letter ${word[index]}`);
     const beforeLetter = word.substring(0, index);
     const highlightedLetter = word.substring(index, index + 1);
     speechSynthesis.speak(
@@ -32,7 +30,7 @@ const CardContent = ({ imageUrl, word, cardSide }: CardContentProps) => {
   const highlightAndSpeak = (word: string) => {
     let index = 0;
     highlightAndSpeakWord();
-  
+
     const intervalId = setInterval(() => {
       if (index < word.length) {
         highlightAndSpeakLetter(index, word);
@@ -44,21 +42,20 @@ const CardContent = ({ imageUrl, word, cardSide }: CardContentProps) => {
         clearInterval(intervalId);
       }
     }, 1000);
-  
+
     return intervalId;
   };
 
   useEffect(() => {
     if (cardSide !== "back") return;
-  
+
     let timeoutId: NodeJS.Timeout;
     let intervalId: NodeJS.Timeout;
-  
+
     timeoutId = setTimeout(() => {
       intervalId = highlightAndSpeak(word);
     }, 1000);
-  
-    // Cleanup function
+
     return () => {
       window.speechSynthesis.cancel();
       clearTimeout(timeoutId);
