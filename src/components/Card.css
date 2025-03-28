@@ -1,6 +1,7 @@
 .card {
     width: 100%;
     max-width: 600px;
+    max-height: 750px;
     aspect-ratio: 2/3;
     position: relative;
     transform-style: preserve-3d;

@@ -1,3 +1,7 @@
+#root {
+  max-height: 100vh;
+}
+
 .card-buttons {
   max-width: 600px;
   margin: 0 auto;
